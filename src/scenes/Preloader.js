@@ -15,6 +15,7 @@ export default class Preloader extends Phaser.Scene
 
         //load characters
         this.load.atlas('big-demon', 'characters/big-demon/big-demon.png', 'characters/big-demon/big-demon.json')
+        this.load.atlas('chort', 'characters/chort/chort.png', 'characters/chort/chort.json')
     }
 
     create(){

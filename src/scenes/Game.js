@@ -1,8 +1,10 @@
 import Phaser from 'phaser'
 
 import { createCharacterAnims } from '../anims/characterAnims'
+import { createEnemyAnims } from '../anims/EnemyAnims'
 
 import BigDemon from '../character/BigDemon'
+import Chort from '../character/Chort'
 
 export default class GameScene extends Phaser.Scene
 {
@@ -12,6 +14,7 @@ export default class GameScene extends Phaser.Scene
         
         this.cursors = undefined
         this.player = undefined
+        this.chort = undefined
 	}
 
 	preload()
@@ -32,35 +35,29 @@ export default class GameScene extends Phaser.Scene
 
         //create anims before adding characters
         createCharacterAnims(this.anims)
+        createEnemyAnims(this.anims)
 
-        //add player
+        //add player & collisions
         this.player = this.add.bigdemon(400,510,'big-demon')
-
-        //add collisions
         this.physics.add.collider(this.player, platforms)
+        this.player.body.collideWorldBounds=true
 
-
-        /*const particles = this.add.particles('red')
-
-        const emitter = particles.createEmitter({
-            speed: 100,
-            scale: { start: 1, end: 0 },
-            blendMode: 'ADD'
-        })
-
-        const logo = this.physics.add.image(400, 100, 'logo')
-
-        logo.setVelocity(100, 200)
-        logo.setBounce(1, 1)
-        logo.setCollideWorldBounds(true)
-
-        emitter.startFollow(logo)*/
+        //add chort and collisions
+        //use a group to set the object type
+        const chortgrp = this.physics.add.group({classType:Chort})
+        this.chort = chortgrp.get(400, 100, 'chort')
+        this.physics.add.collider(chortgrp, platforms)
+        this.chort.setScale(3)
+        this.chort.body.onCollide = true
+        this.chort.body.collideWorldBounds=true
     }
 
     update()
     {
-        //detect collision before player and platform before passing cursors?
-
+        //turn chort if he hits the edge
+        if (this.chort.body.blocked.left || this.chort.body.blocked.right) {
+            this.chort.toggleDirection()
+        }
         //if player loaded
         if (this.player){
             //pass cursor keys to character

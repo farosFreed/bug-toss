@@ -17,11 +17,6 @@ const createCharacterAnims = (anims) => {
         frameRate: 12
     })
     //eat ?
-    /*anims.create({
-        key: 'faune-faint',
-        frames: anims.generateFrameNames('faune',{start:1, end:4, prefix:'faint-', suffix:'.png'}),
-        frameRate: 15
-    })*/
 }
 
 export {
