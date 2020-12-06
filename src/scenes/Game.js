@@ -1,9 +1,7 @@
 import Phaser from 'phaser'
-import { createbugAnims } from '../anims/bugAnims'
 
 import { createCharacterAnims } from '../anims/characterAnims'
 import { createEnemyAnims } from '../anims/EnemyAnims'
-//import { createBugAnims } from '../anims/BugAnims'
 
 import BigDemon from '../character/BigDemon'
 import Chort from '../character/Chort'
@@ -71,6 +69,7 @@ export default class GameScene extends Phaser.Scene
         if (parts[1] == 'bad.png')
         {
         this.gameOver = true
+        return
         }
         //else, destroy bug and increase score
         this.score++
@@ -87,7 +86,8 @@ export default class GameScene extends Phaser.Scene
         if (parts[1] == 'good.png')
         {
         this.gameOver = true
-        }
+        return
+        } 
         //else, destroy bug
         this.bugs.killAndHide(obj2) 
         this.bugs.remove(obj2)//remove the physics body to prevent errors
@@ -98,7 +98,11 @@ export default class GameScene extends Phaser.Scene
     {
         //if game over
         if (this.gameOver){
-            this.scene.pause()//return //freeze
+            //transition to end scene over 1 second and pass the value of our score
+            this.scene.transition({target:'end-scene', duration:2000, data:{score:this.score}, moveAbove:true, remove:true})
+            //stop physics and take away chorts bugs
+            this.physics.pause()
+            this.chort.setBugs(undefined)
         } else {
             //turn chort if he hits the world edge
             if (this.chort.body.blocked.left || this.chort.body.blocked.right) {

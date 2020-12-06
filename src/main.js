@@ -3,6 +3,7 @@ import Phaser from 'phaser'
 //scenes
 import Preloader from './scenes/Preloader'
 import GameScene from './scenes/Game'
+import EndScene from './scenes/End'
 
 const config = {
 	type: Phaser.AUTO,
@@ -15,7 +16,7 @@ const config = {
 			debug: true
 		}
 	},
-	scene: [Preloader, GameScene]
+	scene: [Preloader, GameScene, EndScene]
 }
 
 export default new Phaser.Game(config)
