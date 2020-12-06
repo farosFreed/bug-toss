@@ -75,7 +75,10 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
     setBugs(bugs){
         this.#bugs = bugs
     }
-
+    getBugs(){
+        return this.#bugs
+    }
+    
     preUpdate(t,dt)
     {
         super.preUpdate(t,dt)

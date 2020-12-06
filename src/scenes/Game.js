@@ -61,6 +61,15 @@ export default class GameScene extends Phaser.Scene
         this.physics.add.collider(this.bugs, ground, this.handleBugGroundCollision, undefined, this) //add collider for bugs and ground
     }
 
+    //player BURP clears the board of bugs once per game
+    //TESTED WORKING
+    destroyAllBugs(){
+        this.bugs = this.chort.getBugs()
+        this.bugs.clear(true) // not working?!
+        //tell chort
+        this.chort.setBugs(this.bugs)
+    }
+
     handleBugPlayerCollision(obj1, obj2){
         //when bug hits player
         const bug = obj2
@@ -101,7 +110,7 @@ export default class GameScene extends Phaser.Scene
             //transition to end scene over 1 second and pass the value of our score
             this.scene.transition({target:'end-scene', duration:2000, data:{score:this.score}, moveAbove:true, remove:true})
             //stop physics and take away chorts bugs
-            this.physics.pause()
+            this.physics.pause() 
             this.chort.setBugs(undefined)
         } else {
             //turn chort if he hits the world edge
