@@ -1,0 +1,398 @@
+{
+	"textures": [
+		{
+			"image": "foods.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 104,
+				"h": 54
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Apple-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "AppleWorm-bad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 19,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Avocado-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 37,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Beer-bad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 55,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "DragonFruit-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 73,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Eggplant-good.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 12,
+						"h": 16
+					},
+					"frame": {
+						"x": 91,
+						"y": 1,
+						"w": 12,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Lemon-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "MelonWater-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 19,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Peach-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 37,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Stein-bad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 55,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Strawberry-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 73,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Pineapple-good.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 12,
+						"h": 16
+					},
+					"frame": {
+						"x": 91,
+						"y": 19,
+						"w": 12,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Turnip-good.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1,
+						"y": 37,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Tomato-good.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 16,
+						"h": 15
+					},
+					"frame": {
+						"x": 19,
+						"y": 37,
+						"w": 16,
+						"h": 15
+					}
+				},
+				{
+					"filename": "Cherry-good.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 16
+					},
+					"frame": {
+						"x": 37,
+						"y": 37,
+						"w": 15,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Moonshine-bad.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 16
+					},
+					"frame": {
+						"x": 54,
+						"y": 37,
+						"w": 15,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Whiskey-bad.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 14,
+						"h": 16
+					},
+					"frame": {
+						"x": 71,
+						"y": 37,
+						"w": 14,
+						"h": 16
+					}
+				},
+				{
+					"filename": "Wine-bad.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 12,
+						"h": 16
+					},
+					"frame": {
+						"x": 87,
+						"y": 37,
+						"w": 12,
+						"h": 16
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:021da21be4719ecc1924928b1398cc17:3749af793e5b7391db297a669806bf9d:e5defd3d2fbc95259788396154a29a63$"
+	}
+}

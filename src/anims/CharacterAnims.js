@@ -16,7 +16,6 @@ const createCharacterAnims = (anims) => {
         repeat: -1,
         frameRate: 12
     })
-    //eat ?
 }
 
 export {

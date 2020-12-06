@@ -12,7 +12,7 @@ export default class BigDemon extends Phaser.Physics.Arcade.Sprite
     update(cursors){
         super.update(cursors)
 
-        const speed = 300
+        const speed = 350
 
         //if left go left
         if (cursors.left.isDown){
