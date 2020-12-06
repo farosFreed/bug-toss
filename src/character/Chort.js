@@ -40,14 +40,14 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
                 }
                 //else make a bug from array
                 const bugs = [
-                    {frame: 'Apple-good.png', gravity:0},
+                    {frame: 'Apple-good.png', gravity:50},
                     {frame: 'Beer-bad.png', gravity:225},
                     {frame: 'DragonFruit-good.png', gravity:100},
                     //{frame: 'Eggplant-good.png', gravity:200},
-                    {frame: 'Peach-good.png', gravity:0},
+                    {frame: 'Peach-good.png', gravity:50},
                     {frame: 'MelonWater-good.png', gravity:100},
                     {frame: 'Whiskey-bad.png', gravity:175},
-                    {frame: 'Strawberry-good.png', gravity:0},
+                    {frame: 'Strawberry-good.png', gravity:50},
                     {frame: 'Pineapple-good.png', gravity:100},
                     {frame: 'Turnip-good.png', gravity:175},
                     {frame: 'Tomato-good.png', gravity:150},
@@ -78,7 +78,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
     getBugs(){
         return this.#bugs
     }
-    
+
     preUpdate(t,dt)
     {
         super.preUpdate(t,dt)

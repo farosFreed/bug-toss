@@ -24,7 +24,9 @@
 		"parcel-plugin-static-files-copy": "^2.4.3"
 	},
 	"dependencies": {
-		"phaser": "^3.24.1"
+		"phaser": "^3.24.1",
+		"public": "^0.1.5",
+		"sfx": "^0.1.1"
 	},
 	"parcelCleanPaths": [
 		"dist"

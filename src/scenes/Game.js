@@ -17,7 +17,12 @@ export default class GameScene extends Phaser.Scene
         this.chort = undefined
         this.bugs = undefined
 
+        this.music = undefined
+
         this.score = 0
+        this.powerUp = 1
+        this.burp = undefined
+        this.eat = undefined
         this.gameOver = false
 	}
 
@@ -29,8 +34,12 @@ export default class GameScene extends Phaser.Scene
 
     create()
     {
-        //background set
+        //background music and image set
         this.add.image(400, 300, 'background')
+        this.music = this.sound.add('bg-music')
+        this.music.play()
+        this.burp = this.sound.add('burp')
+        this.eat = this.sound.add('eat')
 
         //create platforms
         const platforms = this.physics.add.staticGroup()
@@ -62,7 +71,6 @@ export default class GameScene extends Phaser.Scene
     }
 
     //player BURP clears the board of bugs once per game
-    //TESTED WORKING
     destroyAllBugs(){
         this.bugs = this.chort.getBugs()
         this.bugs.clear(true) // not working?!
@@ -74,6 +82,7 @@ export default class GameScene extends Phaser.Scene
         //when bug hits player
         const bug = obj2
         const parts = bug.anims.parent.frame.name.split('-')
+        this.eat.play()
         //gameover if bad bug hits player
         if (parts[1] == 'bad.png')
         {
@@ -111,16 +120,28 @@ export default class GameScene extends Phaser.Scene
             this.scene.transition({target:'end-scene', duration:2000, data:{score:this.score}, moveAbove:true, remove:true})
             //stop physics and take away chorts bugs
             this.physics.pause() 
+            this.music.pause()
             this.chort.setBugs(undefined)
         } else {
             //turn chort if he hits the world edge
             if (this.chort.body.blocked.left || this.chort.body.blocked.right) {
                 this.chort.toggleDirection()
             }
-            //if player loaded
-            if (this.player){
-                //pass cursor keys to character
-                this.player.update(this.cursors)
+            
+            if(this.powerUp > 0 && this.cursors.space.isDown){
+                //BURP
+                this.destroyAllBugs() 
+                this.powerUp-- 
+                this.music.pause()
+                this.burp.play()
+                this.music.play()
+                //player animation?
+            } else {
+                //if player loaded
+                if (this.player){
+                    //pass cursor keys to character
+                    this.player.update(this.cursors)
+                }
             }
         }
     }
