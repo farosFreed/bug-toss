@@ -22,7 +22,7 @@ export default class Preloader extends Phaser.Scene
     preload()
     {
         //load scene assets
-        this.load.image('background', 'assets/bugtossbg.png')
+        this.load.image('background', 'assets/bugtossbg_fix.png')
         this.load.image('ground', 'assets/clear_platform.png')
 
         //load character assets
