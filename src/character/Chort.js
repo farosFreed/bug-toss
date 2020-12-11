@@ -33,7 +33,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
 
         //create a #bugDrop event every .5 secs
         this.#bugDrop = scene.time.addEvent({
-            delay: 500,
+            delay:  700,//was 500, try 700?
             callback: () => {
                 if (this.#bugs == undefined){
                     return //if no bugs yet, do nothing

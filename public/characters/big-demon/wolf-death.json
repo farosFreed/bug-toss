@@ -1,0 +1,356 @@
+{
+	"textures": [
+		{
+			"image": "wolf-death.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 178,
+				"h": 64
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "WolfDeath_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 11,
+						"w": 27,
+						"h": 34
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 27,
+						"h": 34
+					}
+				},
+				{
+					"filename": "WolfDeath_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 37,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfDeath_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 37,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfDeath_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 14,
+						"w": 28,
+						"h": 31
+					},
+					"frame": {
+						"x": 30,
+						"y": 1,
+						"w": 28,
+						"h": 31
+					}
+				},
+				{
+					"filename": "WolfDeath_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 16,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 39,
+						"y": 34,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "WolfDeath_7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 14,
+						"w": 28,
+						"h": 31
+					},
+					"frame": {
+						"x": 60,
+						"y": 1,
+						"w": 28,
+						"h": 31
+					}
+				},
+				{
+					"filename": "WolfDeath_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 18,
+						"w": 37,
+						"h": 27
+					},
+					"frame": {
+						"x": 68,
+						"y": 34,
+						"w": 37,
+						"h": 27
+					}
+				},
+				{
+					"filename": "WolfDeath_8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 15,
+						"w": 29,
+						"h": 30
+					},
+					"frame": {
+						"x": 90,
+						"y": 1,
+						"w": 29,
+						"h": 30
+					}
+				},
+				{
+					"filename": "WolfDeath_9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 18,
+						"w": 36,
+						"h": 27
+					},
+					"frame": {
+						"x": 107,
+						"y": 33,
+						"w": 36,
+						"h": 27
+					}
+				},
+				{
+					"filename": "WolfDeath_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 1,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 1,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 12,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 12,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 12,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 36,
+						"w": 45,
+						"h": 9
+					},
+					"frame": {
+						"x": 121,
+						"y": 12,
+						"w": 45,
+						"h": 9
+					}
+				},
+				{
+					"filename": "WolfDeath_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 38,
+						"w": 56,
+						"h": 7
+					},
+					"frame": {
+						"x": 121,
+						"y": 23,
+						"w": 56,
+						"h": 7
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:12f96c2e664e0b5c2aacbc1319432031:26bd9060d719efcb14209aaba54f5289:4ed7439ea036c6c6318529f187c2282d$"
+	}
+}

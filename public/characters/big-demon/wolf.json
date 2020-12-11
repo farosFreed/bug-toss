@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "wolf.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 115,
+				"h": 176
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "WolfIdle_0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfIdle_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 29,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfIdle_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 39,
+						"y": 1,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfIdle_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 21,
+						"w": 37,
+						"h": 24
+					},
+					"frame": {
+						"x": 77,
+						"y": 1,
+						"w": 37,
+						"h": 24
+					}
+				},
+				{
+					"filename": "WolfIdle_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 57,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfIdle_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 36,
+						"h": 26
+					},
+					"frame": {
+						"x": 39,
+						"y": 29,
+						"w": 36,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfRun_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 23,
+						"w": 37,
+						"h": 22
+					},
+					"frame": {
+						"x": 77,
+						"y": 27,
+						"w": 37,
+						"h": 22
+					}
+				},
+				{
+					"filename": "WolfRun_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 23,
+						"w": 37,
+						"h": 22
+					},
+					"frame": {
+						"x": 77,
+						"y": 51,
+						"w": 37,
+						"h": 22
+					}
+				},
+				{
+					"filename": "WolfIdle_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 20,
+						"w": 36,
+						"h": 25
+					},
+					"frame": {
+						"x": 39,
+						"y": 57,
+						"w": 36,
+						"h": 25
+					}
+				},
+				{
+					"filename": "WolfRun_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 24,
+						"w": 37,
+						"h": 21
+					},
+					"frame": {
+						"x": 77,
+						"y": 75,
+						"w": 37,
+						"h": 21
+					}
+				},
+				{
+					"filename": "WolfIdle_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 19,
+						"w": 35,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 85,
+						"w": 35,
+						"h": 26
+					}
+				},
+				{
+					"filename": "WolfIdle_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 20,
+						"w": 36,
+						"h": 25
+					},
+					"frame": {
+						"x": 1,
+						"y": 113,
+						"w": 36,
+						"h": 25
+					}
+				},
+				{
+					"filename": "WolfIdle_7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 21,
+						"w": 35,
+						"h": 24
+					},
+					"frame": {
+						"x": 1,
+						"y": 140,
+						"w": 35,
+						"h": 24
+					}
+				},
+				{
+					"filename": "WolfRun_0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 22,
+						"w": 36,
+						"h": 23
+					},
+					"frame": {
+						"x": 39,
+						"y": 84,
+						"w": 36,
+						"h": 23
+					}
+				},
+				{
+					"filename": "WolfIdle_9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 21,
+						"w": 35,
+						"h": 24
+					},
+					"frame": {
+						"x": 39,
+						"y": 109,
+						"w": 35,
+						"h": 24
+					}
+				},
+				{
+					"filename": "WolfRun_7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 23,
+						"w": 35,
+						"h": 21
+					},
+					"frame": {
+						"x": 77,
+						"y": 98,
+						"w": 35,
+						"h": 21
+					}
+				},
+				{
+					"filename": "WolfIdle_8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 23,
+						"w": 34,
+						"h": 22
+					},
+					"frame": {
+						"x": 76,
+						"y": 121,
+						"w": 34,
+						"h": 22
+					}
+				},
+				{
+					"filename": "WolfRun_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 23,
+						"w": 34,
+						"h": 22
+					},
+					"frame": {
+						"x": 39,
+						"y": 135,
+						"w": 34,
+						"h": 22
+					}
+				},
+				{
+					"filename": "WolfRun_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 26,
+						"w": 41,
+						"h": 16
+					},
+					"frame": {
+						"x": 38,
+						"y": 159,
+						"w": 41,
+						"h": 16
+					}
+				},
+				{
+					"filename": "WolfRun_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 23,
+						"w": 33,
+						"h": 20
+					},
+					"frame": {
+						"x": 81,
+						"y": 145,
+						"w": 33,
+						"h": 20
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:c2cd0a7d4011280d132fbb3322c06694:646e9a33edf4a10ec33477326a130acb:6aa8f2d37925a18e990d23a498f81618$"
+	}
+}

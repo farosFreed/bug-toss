@@ -13,7 +13,7 @@ export default class GameScene extends Phaser.Scene
         super('game-scene')
         
         this.cursors = undefined
-        this.player = undefined
+        this.character = undefined
         this.chort = undefined
         this.bugs = undefined
 
@@ -54,9 +54,9 @@ export default class GameScene extends Phaser.Scene
         //createbugAnims(this.anims)
 
         //add player & collisions
-        this.player = this.add.bigdemon(400,510,'big-demon')
-        this.physics.add.collider(this.player, platforms)
-        this.player.body.collideWorldBounds=true
+        this.character = this.add.bigdemon(400,510,'big-demon')
+        this.physics.add.collider(this.character, platforms)
+        this.character.body.collideWorldBounds=true
 
         //create bugs for chort
         this.bugs = this.physics.add.group()
@@ -66,7 +66,7 @@ export default class GameScene extends Phaser.Scene
 
         this.physics.add.collider(this.chort, platforms)
         this.chort.setBugs(this.bugs) //pass bugs group to chort, chort makes bugs in group
-        this.physics.add.collider(this.bugs, this.player, this.handleBugPlayerCollision, undefined, this) //add collider for bugs and player
+        this.physics.add.collider(this.bugs, this.character, this.handleBugPlayerCollision, undefined, this) //add collider for bugs and player
         this.physics.add.collider(this.bugs, ground, this.handleBugGroundCollision, undefined, this) //add collider for bugs and ground
     }
 
@@ -130,6 +130,8 @@ export default class GameScene extends Phaser.Scene
             
             if(this.powerUp > 0 && this.cursors.space.isDown){
                 //BURP
+                //this.character.anims.play('wolf-attack', true)
+                this.character.usePowerUp()
                 this.destroyAllBugs() 
                 this.powerUp-- 
                 this.music.pause()
@@ -138,9 +140,9 @@ export default class GameScene extends Phaser.Scene
                 //player animation?
             } else {
                 //if player loaded
-                if (this.player){
+                if (this.character){
                     //pass cursor keys to character
-                    this.player.update(this.cursors)
+                    this.character.update(this.cursors)
                 }
             }
         }

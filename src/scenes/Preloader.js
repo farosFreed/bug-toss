@@ -11,6 +11,7 @@ import EatSfxWav from '../../public/sfx/eat_04.wav'
 import BurpSfxMp3 from '../../public/sfx/burp_02.mp3'
 import BurpSfxOgg from '../../public/sfx/burp_02.ogg'
 import BurpSfxWav from '../../public/sfx/burp_02.wav'
+import BigDemon from '../character/BigDemon'
 
 export default class Preloader extends Phaser.Scene 
 {
@@ -27,6 +28,9 @@ export default class Preloader extends Phaser.Scene
 
         //load character assets
         this.load.atlas('big-demon', 'characters/big-demon/big-demon.png', 'characters/big-demon/big-demon.json')
+        //this.load.atlas('otter', 'characters/big-demon/otter.png', 'characters/big-demon/otter.json')
+        this.load.atlas('wolf', 'characters/big-demon/wolf.png', 'characters/big-demon/wolf.json')
+        this.load.atlas('wolf-attack', 'characters/big-demon/wolf-attack.png', 'characters/big-demon/wolf-attack.json')
         this.load.atlas('chort', 'characters/chort/chort.png', 'characters/chort/chort.json')
 
         //load bug assets

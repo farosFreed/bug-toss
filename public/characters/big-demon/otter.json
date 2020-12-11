@@ -1,0 +1,209 @@
+{
+	"textures": [
+		{
+			"image": "otter.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 254,
+				"h": 326
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "otter_run_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 99,
+						"w": 172,
+						"h": 62
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 172,
+						"h": 62
+					}
+				},
+				{
+					"filename": "otter_run_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 101,
+						"w": 168,
+						"h": 60
+					},
+					"frame": {
+						"x": 1,
+						"y": 65,
+						"w": 168,
+						"h": 60
+					}
+				},
+				{
+					"filename": "otter_idle_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 75,
+						"w": 82,
+						"h": 86
+					},
+					"frame": {
+						"x": 171,
+						"y": 65,
+						"w": 82,
+						"h": 86
+					}
+				},
+				{
+					"filename": "otter_run_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 101,
+						"w": 156,
+						"h": 60
+					},
+					"frame": {
+						"x": 1,
+						"y": 127,
+						"w": 156,
+						"h": 60
+					}
+				},
+				{
+					"filename": "otter_idle_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 75,
+						"w": 88,
+						"h": 86
+					},
+					"frame": {
+						"x": 159,
+						"y": 153,
+						"w": 88,
+						"h": 86
+					}
+				},
+				{
+					"filename": "otter_idle_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 77,
+						"w": 86,
+						"h": 84
+					},
+					"frame": {
+						"x": 1,
+						"y": 189,
+						"w": 86,
+						"h": 84
+					}
+				},
+				{
+					"filename": "otter_spin_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 121,
+						"w": 136,
+						"h": 40
+					},
+					"frame": {
+						"x": 89,
+						"y": 241,
+						"w": 136,
+						"h": 40
+					}
+				},
+				{
+					"filename": "otter_spin_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 61,
+						"y": 119,
+						"w": 126,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 283,
+						"w": 126,
+						"h": 42
+					}
+				},
+				{
+					"filename": "otter_spin_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 39,
+						"y": 121,
+						"w": 120,
+						"h": 40
+					},
+					"frame": {
+						"x": 129,
+						"y": 283,
+						"w": 120,
+						"h": 40
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:c32833906359a2eb2eda45bce558be8b:84afd7c04beb11466d94c05ab831cce7:184a55b37ece98457c0ba2900d7d0029$"
+	}
+}
