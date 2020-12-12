@@ -131,6 +131,12 @@ export default class GameScene extends Phaser.Scene
             if(this.powerUp > 0 && this.cursors.space.isDown){
                 //BURP
                 //this.character.anims.play('wolf-attack', true)
+                /*this.time.addEvent({
+                    delay: 500, // in ms
+                    callback: () => {
+                      player.setVelocityY(-300)
+                    }
+                  })*/
                 this.character.usePowerUp()
                 this.destroyAllBugs() 
                 this.powerUp-- 
