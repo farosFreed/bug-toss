@@ -10,7 +10,6 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
     //bug vars
     #bugs = undefined
     #bugDrop = undefined
-    #dropDelay = 800
 
     constructor(scene,x,y,texture,frame){
         super(scene,x,y,texture,frame)
@@ -20,30 +19,31 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
 
         //create a #moveChangeEvent every 2 secs that might change direction
         this.#moveChangeEvent = scene.time.addEvent({
-            delay: 1000, //was 1000, made quicker
+            delay: 800, //was 1000, made quicker
             callback: () => {
                 //BUGGY! can get stuck in corners
                 //get a random number 0 or 1 and update the value of #left 
-                /*const coinFlip = Phaser.Math.Between(0,1)
+                const coinFlip = Phaser.Math.Between(0,1)
                 if (coinFlip > 0 ){
                     this.#left = true //go left
                 } else {
                     this.#left = false //go right
-                }*/
+                }
 
                 //check if going left or right, go opposite
-                if (this.#left){
+                //TOO PREDICATABLE, no randomness
+                /*if (this.#left){
                     this.#left = false
                 } else {
                     this.#left = true
-                }
+                }*/
             },
             loop:true
         })
 
         //create a #bugDrop event every .5 secs
         this.#bugDrop = scene.time.addEvent({
-            delay:  this.#dropDelay,//700,//was 500
+            delay:  800,//700,//was 500
             callback: () => {
                 if (this.#bugs == undefined){
                     return //if no bugs yet, do nothing
@@ -75,7 +75,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
                 this.#bugDrop.delay -= 5
                 //console.log(this.#bugDrop.delay)
                 //make chort run a little faster
-                this.#chortSpeed += 5
+                this.#chortSpeed += 2
                 
             },
             loop:true

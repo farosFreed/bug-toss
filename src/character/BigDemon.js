@@ -37,7 +37,7 @@ export default class BigDemon extends Phaser.Physics.Arcade.Sprite
             this.setVelocity(speed, 0)
             this.anims.play('big-demon-run', true)
             this.scaleX  = scale //flip sprite back
-            this.body.offset.x = 12
+            this.body.offset.x = 15
         } else {
             this.setVelocityX(0)
             this.anims.play('big-demon-idle', true)
@@ -61,7 +61,7 @@ Phaser.GameObjects.GameObjectFactory.register('bigdemon', function(x,y,texture,f
     self.scene.physics.world.enableBody(sprite, Phaser.Physics.Arcade.DYNAMIC_BODY)
 
     //now we can change our body size!
-    sprite.body.setSize(sprite.width * .6, sprite.height * .35)
+    sprite.body.setSize(sprite.width * .50, sprite.height * .30)
 
     return sprite
 })
