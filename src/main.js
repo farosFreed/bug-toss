@@ -9,7 +9,6 @@ const config = {
 	type: Phaser.AUTO,
 	scale: {
 		mode: Phaser.Scale.FIT,
-		//parent: 'phaser-example', //really? whats this do exactly
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 		width: 800,
 		height: 600
@@ -18,7 +17,7 @@ const config = {
 		default: 'arcade',
 		arcade: {
 			gravity: { y: 200 },
-			debug: true
+			debug: false
 		}
 	},
 	scene: [Preloader, GameScene, EndScene]

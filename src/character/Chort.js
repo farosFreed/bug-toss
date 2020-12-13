@@ -5,10 +5,12 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
     //movement vars
     #left = undefined //initial facing direciton
     #moveChangeEvent = undefined //event every few seconds that might change our direction
+    #chortSpeed = undefined
 
     //bug vars
     #bugs = undefined
     #bugDrop = undefined
+    #dropDelay = 800
 
     constructor(scene,x,y,texture,frame){
         super(scene,x,y,texture,frame)
@@ -18,14 +20,22 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
 
         //create a #moveChangeEvent every 2 secs that might change direction
         this.#moveChangeEvent = scene.time.addEvent({
-            delay: 1000,
+            delay: 1000, //was 1000, made quicker
             callback: () => {
+                //BUGGY! can get stuck in corners
                 //get a random number 0 or 1 and update the value of #left 
-                const coinFlip = Phaser.Math.Between(0,1)
+                /*const coinFlip = Phaser.Math.Between(0,1)
                 if (coinFlip > 0 ){
                     this.#left = true //go left
                 } else {
                     this.#left = false //go right
+                }*/
+
+                //check if going left or right, go opposite
+                if (this.#left){
+                    this.#left = false
+                } else {
+                    this.#left = true
                 }
             },
             loop:true
@@ -33,7 +43,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
 
         //create a #bugDrop event every .5 secs
         this.#bugDrop = scene.time.addEvent({
-            delay:  700,//was 500, try 700?
+            delay:  this.#dropDelay,//700,//was 500
             callback: () => {
                 if (this.#bugs == undefined){
                     return //if no bugs yet, do nothing
@@ -51,7 +61,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
                     {frame: 'Pineapple-good.png', gravity:100},
                     {frame: 'Turnip-good.png', gravity:175},
                     {frame: 'Tomato-good.png', gravity:150},
-                    {frame: 'Moonshine-bad.png', gravity:250}
+                    {frame: 'Moonshine-bad.png', gravity:200}
                 ]
                 
                 const randNum = Phaser.Math.Between(0,bugs.length - 1)
@@ -60,6 +70,13 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
                 const bug = this.#bugs.get(this.x, this.y + 60, 'foods', bugs[randNum].frame)
                 bug.setScale(2)
                 bug.setVelocityY(bugs[randNum].gravity)
+
+                //make bugs drop slightly faster each loop
+                this.#bugDrop.delay -= 5
+                //console.log(this.#bugDrop.delay)
+                //make chort run a little faster
+                this.#chortSpeed += 5
+                
             },
             loop:true
         })
@@ -79,6 +96,7 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
         return this.#bugs
     }
 
+
     preUpdate(t,dt)
     {
         super.preUpdate(t,dt)
@@ -87,11 +105,13 @@ export default class Chort extends Phaser.Physics.Arcade.Sprite
             return //do nothing at first
         }
 
+        this.chortSpeed = 200
+
         //update character direction based on value of #left
         if (this.#left){
-            this.setVelocityX(-200)
+            this.setVelocityX(-this.chortSpeed)
         } else {
-            this.setVelocityX(200)
+            this.setVelocityX(this.chortSpeed)
         }
     }
 }

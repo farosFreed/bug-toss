@@ -93,7 +93,6 @@ export default class GameScene extends Phaser.Scene
         this.score++
         this.bugs.killAndHide(obj2) 
         this.bugs.remove(obj2)//remove the physics body to prevent errors
-        console.log(this.score)
     }
 
     handleBugGroundCollision(obj1, obj2){
@@ -115,7 +114,7 @@ export default class GameScene extends Phaser.Scene
     update()
     {
         //if game over
-        if (this.gameOver){
+        if (this.gameOver || this.score >= 100 ){
             //transition to end scene over 1 second and pass the value of our score
             this.scene.transition({target:'end-scene', duration:2000, data:{score:this.score}, moveAbove:true, remove:true})
             //stop physics and take away chorts bugs
